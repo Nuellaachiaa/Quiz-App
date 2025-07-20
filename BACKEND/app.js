@@ -6,7 +6,7 @@ const cors = require('cors');
 const quizRoutes = require("./router/quizRoutes");
 require("dotenv").config();
 
-PORT = 3000;
+PORT = 5000;
 const app = express();
 
 app.set("view engine", "ejs")
@@ -28,5 +28,5 @@ mongoose.connect(process.env.MONGO_URI)
 
 
     app.listen(PORT, function () {
-    console.log("Server started on port " + 3000);
+    console.log("Server started on port " + PORT);
 });
